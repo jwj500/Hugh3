@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CHIRP, The Confidential Human Factors Incident Reporting Programme</title>
+  <link href="hugh2.css" rel="stylesheet" type="text/css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="dropit.js"></script>
+
+</head>
+
+
+
+<body>
+
+<div class="container"> <!-- this contains the whole body of html -->
+
+<!--------------------------------->
+
+<div class="header"> <!-- this is the header banner -->
+	
+    <div class="logo">
+    	<img src="logo.png" name="logo" height="90" id="logo"  />
+    </div> <!-- logo -->
+    
+    <div class="title">
+    <h1>CHIRP: Confidential Incident Reporting</h1>
+    </div> <!--title -->
+    
+ <div class="menu-bar">
+<img src="logo.png" name="logo" height="90" id="logo" style="float:right;" />
+ 
+ 
+ </div> <!--dropdowm -->
+    
+</div> <!-- end of header banner -->
+
+<!--------------------------------->
+
+<div class="content"> <!-- this is the main body of the page -->
+
+<h3> Please select the issue that most closely represents the safety issue you experienced. Remember this is 100% anonymous. You can write any further details if you wish in the next page.
+</h3>
+
+<button type="button" onclick="buttonPress()"><h2>Dangerous Driving</h2></button>
+
+<button type="button" onclick="buttonPress()"><h2>Nearly Hit Pedestrian</h2></button>
+
+<button type="button" onclick="buttonPress()"><h2>Patient Issues</h2></button>
+
+
+
+</div> <!-- end of main content -->
+
+<!--------------------------------->
+
+<div class="footer"> <!-- this is the footer banner -->
+&copy; jackwjarvis.co.uk in conjunction with Hugh Shiels
+</div> <!-- end of footer -->
+
+<!--------------------------------->
+
+</div> <!-- end of container -->
+
+<script>
+function buttonPress() {
+    var txt;
+    var r = confirm("Successfully submited, anonymously. Thank you for helping to make this industry safer. Would you like to add further confidential information?");
+    if (r == true) {
+        window.location.href="addedinfo.html";
+    } else {
+        txt = "You pressed Cancel!";
+    }
+}
+</script>
+
+
+</body>
+
+
+</html>
